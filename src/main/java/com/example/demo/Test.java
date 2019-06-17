@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -213,5 +214,22 @@ public class Test {
         
          memberNames.stream().filter((e)->e.startsWith("S")).map(s->s.toUpperCase()).forEach(System.out::println);
         System.out.println(memberNames);
+        
+      String  str  = "AABBCSAABFGHAAB";
+  	  String pat = "AAB";
+  	  
+  	  for (int i = -1; (i = str.indexOf(pat, i + 1)) != -1; i++) 
+  	  {
+  		    System.out.println(i);
+  	  }
+  	  
+  	  final Set<Integer> mapList = new HashSet<Integer>();
+  	   final Map mapll=new HashMap();
+  	 mapll.put(1,"A");
+  	mapll.put(2, "");
+  	System.out.println(mapll);
+  	  mapList.add(1);
+  	  mapList.add(2);
+  	  System.out.println(mapList);
 	}
 }

@@ -27,5 +27,7 @@ public class Exceptions {
 	   try{  
 	    n();  
 	   }catch(Exception e){System.out.println("exception handled");}  
-	  }  
+	  }
+
+	  
 }
