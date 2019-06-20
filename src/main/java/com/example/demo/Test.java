@@ -231,5 +231,11 @@ public class Test {
   	  mapList.add(1);
   	  mapList.add(2);
   	  System.out.println(mapList);
+  	  
+  	  Map<String,List<Product>> mapObject = new HashMap<String,List<Product>>();
+  	  mapObject.put("productList",productsList);
+  	  System.out.println(mapObject);
+  	  List<List<Product>> p = mapObject.values().stream().map(e->e).collect(Collectors.toList());
+  	  System.out.println(p.toString());
 	}
 }
